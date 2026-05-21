@@ -16,7 +16,9 @@ return new class extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
+            $table->boolean('is_enabled')->default(false); // para activar o desactivar el usuario si es true puede inicar sesion, si es false no podra
             $table->string('password');
+            $table->boolean('password_active')->default(false); // para el cambio de contraseña al iniciar sesion x primera vez, si es true podra inciar sesion con normalidad pero si es falso cuando incie sesion lo rediriga al cambio de contraseña 
             $table->rememberToken();
             $table->timestamps();
         });

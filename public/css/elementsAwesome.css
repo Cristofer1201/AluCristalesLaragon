@@ -1,0 +1,71 @@
+
+    .testimotionals {
+     /*width:350px;*/
+     /*display:inline-block;*/
+      
+    }
+    
+    
+    .testimotionals .cardHover {
+      
+      position:relative;
+      overflow:hidden;
+      /*width:350px;*/
+      margin:0 auto;
+      background:#333;
+      /*padding:20px;*/
+      box-sizing:border-box;
+      text-align:center;
+      box-shadow:0 10px 40px rgba(0,0,0,.15)
+    }
+    .testimotionals .cardHover .layer {
+      z-index:1;
+      position:absolute;
+      top:0;
+      height:100%;
+      width:100%;
+      left:-100%;
+      /*background:linear-gradient(to left , orange, tomato);*/
+      transition:0.5s;
+      
+    }
+    
+    .testimotionals .cardHover .content {
+      z-index:2; 
+      position:relative;
+    }
+    
+    .testimotionals .cardHover:hover  .layer{
+      left:0;
+    }
+    
+    .testimotionals .cardHover .content p {
+      font-size:14px;
+      line-height:24px;
+      color:#fff;
+      
+    }
+    .testimotionals .cardHover .content .image {
+      width:100px; height:100px;
+      margin:0 auto;
+      border-radius:50%;
+      overflow:hidden;
+      border: 4px solid white;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+      
+    }
+    
+    .testimotionals .cardHover .content .details h2 {
+    font-size:18px;
+    color:white;
+    }
+    .testimotionals .cardHover .content .details h2 span {
+    font-size:18px;
+    color:purple;
+      transition:0.5s;
+    }
+    .testimotionals .cardHover:hover .content .details h2 span {
+      color:white;
+      position:relative
+    }
+    
